@@ -23,6 +23,10 @@ Where the model stated a concentration in its decision reason, thinking on staye
 
 Models without a thinking toggle, and reasoning models run in their default mode, are in [results/summary.md](results/summary.md). Two of those are the dangerous pattern with no switch to flip: Mistral-Small 3.1 allowed 60/60 violating doses, and Llama-3.3 70B allowed 21/60 while blocking 20/60 safe doses.
 
+## The same setting moves benchmark scores
+
+On the first 200 MedQA (US) test questions, QwQ-32B scored 60.5% with one sample and a 1,024-token budget. Raising only the budget, with the same prompt, temperature 0 and the same answer parser, gave 75.5% at 2,048 tokens and 84.5% at 4,096 tokens. That beats the 81.5% from a three-sample pipeline with voting, truncation rescue and retrieval arbitration that we had credited for the gain (51 questions gained and 3 lost against the baseline, exact McNemar p = 3e-12). Paired results are in [medqa_budget/summary.md](medqa_budget/summary.md). The runner and records are in `medqa_budget/`; MedQA itself is not redistributed.
+
 ## The task
 
 150 frozen cases from one closed-form model, a one-compartment IV bolus:
@@ -43,6 +47,7 @@ The prompt gives the regimen, the kinetics, the formula, and the limits, and ask
 python3 data/generate_cases.py --output data/cases.jsonl
 python3 analysis/analyze.py          # writes results/summary.json and results/summary.md
 python3 analysis/figure.py           # writes figures/thinking_off_vs_on.png
+python3 medqa_budget/analyze_medqa_budget.py   # writes medqa_budget/summary.md
 ```
 
 The figure needs `matplotlib` (`pip install -r requirements.txt`). Scoring uses the Python standard library.
