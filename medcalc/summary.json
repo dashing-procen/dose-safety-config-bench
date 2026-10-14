@@ -1,0 +1,190 @@
+{
+ "pairs": [
+  {
+   "family": "Qwen3.8 27B",
+   "alone": "alone__qwen3.8-27b__thinking-on",
+   "cns": "cns__qwen3.8-27b__thinking-off",
+   "n": 188,
+   "api_errors_excluded": {
+    "alone": 32,
+    "cns": 0
+   },
+   "alone_pct": 85.1,
+   "cns_pct": 95.7,
+   "gained": 23,
+   "lost": 3,
+   "mcnemar_p": 8.797645568847656e-05,
+   "diff_ci95_pp": [
+    5.9,
+    16.0
+   ],
+   "median_output_tokens": {
+    "alone": 1057,
+    "cns": 218
+   }
+  },
+  {
+   "family": "DeepSeek-V4-Pro",
+   "alone": "alone__deepseek-v4-pro__thinking-on",
+   "cns": "cns__deepseek-v4-pro__thinking-off",
+   "n": 218,
+   "api_errors_excluded": {
+    "alone": 1,
+    "cns": 1
+   },
+   "alone_pct": 80.3,
+   "cns_pct": 90.4,
+   "gained": 37,
+   "lost": 15,
+   "mcnemar_p": 0.003185253447776759,
+   "diff_ci95_pp": [
+    3.7,
+    16.5
+   ],
+   "median_output_tokens": {
+    "alone": 1155,
+    "cns": 214
+   }
+  },
+  {
+   "family": "GPT-OSS-120B",
+   "alone": "alone__gpt-oss-120b__effort-high",
+   "cns": "cns__gpt-oss-120b__effort-low",
+   "n": 220,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 66.4,
+   "cns_pct": 86.4,
+   "gained": 53,
+   "lost": 9,
+   "mcnemar_p": 1.0507232717140574e-08,
+   "diff_ci95_pp": [
+    13.6,
+    26.4
+   ],
+   "median_output_tokens": {
+    "alone": 909,
+    "cns": 668
+   }
+  },
+  {
+   "family": "Gemma-4 26B",
+   "alone": "alone__gemma-4-26b__thinking-off",
+   "cns": "cns__gemma-4-26b__thinking-off",
+   "n": 220,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 58.2,
+   "cns_pct": 85.9,
+   "gained": 74,
+   "lost": 13,
+   "mcnemar_p": 1.5938987081347696e-11,
+   "diff_ci95_pp": [
+    20.5,
+    35.0
+   ],
+   "median_output_tokens": {
+    "alone": 463,
+    "cns": 223
+   }
+  },
+  {
+   "family": "Llama-3.3 70B",
+   "alone": "alone__llama-3.3-70b__default",
+   "cns": "cns__llama-3.3-70b__default",
+   "n": 220,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 42.3,
+   "cns_pct": 82.3,
+   "gained": 94,
+   "lost": 6,
+   "mcnemar_p": 2.005959521923613e-21,
+   "diff_ci95_pp": [
+    32.7,
+    47.3
+   ],
+   "median_output_tokens": {
+    "alone": 275,
+    "cns": 311
+   }
+  }
+ ],
+ "context": [
+  {
+   "family": "Qwen3.8 27B, alone thinking off",
+   "alone": "alone__qwen3.8-27b__thinking-off",
+   "cns": "cns__qwen3.8-27b__thinking-off",
+   "n": 218,
+   "api_errors_excluded": {
+    "alone": 2,
+    "cns": 0
+   },
+   "alone_pct": 80.3,
+   "cns_pct": 94.0,
+   "gained": 32,
+   "lost": 2,
+   "mcnemar_p": 6.938353180885315e-08,
+   "diff_ci95_pp": [
+    9.2,
+    18.8
+   ],
+   "median_output_tokens": {
+    "alone": 869,
+    "cns": 226
+   }
+  },
+  {
+   "family": "Qwen3.8 27B, CNS thinking on",
+   "alone": "alone__qwen3.8-27b__thinking-on",
+   "cns": "cns__qwen3.8-27b__thinking-on",
+   "n": 188,
+   "api_errors_excluded": {
+    "alone": 32,
+    "cns": 2
+   },
+   "alone_pct": 85.1,
+   "cns_pct": 95.7,
+   "gained": 23,
+   "lost": 3,
+   "mcnemar_p": 8.797645568847656e-05,
+   "diff_ci95_pp": [
+    5.3,
+    16.0
+   ],
+   "median_output_tokens": {
+    "alone": 1057,
+    "cns": 538
+   }
+  },
+  {
+   "family": "Gemma-4 26B, alone thinking on",
+   "alone": "alone__gemma-4-26b__thinking-on",
+   "cns": "cns__gemma-4-26b__thinking-off",
+   "n": 101,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 28.7,
+   "cns_pct": 76.2,
+   "gained": 50,
+   "lost": 2,
+   "mcnemar_p": 6.123990203832363e-13,
+   "diff_ci95_pp": [
+    36.6,
+    58.4
+   ],
+   "median_output_tokens": {
+    "alone": 8192,
+    "cns": 225
+   }
+  }
+ ]
+}
