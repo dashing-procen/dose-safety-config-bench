@@ -2,7 +2,7 @@
 
 Evidence for Procen's Clinical Nervous System (CNS): clinical AI should get its safety from validated instruments around the model, not from whichever model or setting happens to be deployed. This repository holds two studies.
 
-1. **[MedCalc-Bench: the same models alone and inside the CNS harness](medcalc/README.md).** Five open model families answered 220 clinical calculation questions alone, at their best reasoning setting, and inside the harness with reasoning off. Every family improved: Qwen3.8 85.1% → 95.7%, DeepSeek-V4-Pro 80.3% → 90.4%, GPT-OSS-120B 66.4% → 86.4%, Gemma-4 58.2% → 85.9%, Llama-3.3 42.3% → 82.3% (paired, each p ≤ 0.003). The gap between the best and worst model narrowed from 42.8 to 13.4 points. Includes the 55-calculator library, validated on 10,538 training cases.
+1. **[MedCalc-Bench: the same models alone and inside the CNS harness](medcalc/README.md).** Five open model families answered all 1,100 MedCalc-Bench Verified test questions alone, at their best measured reasoning setting, and inside the harness with reasoning off or low. Every family improved: Qwen3.8 78.8% → 95.0%, DeepSeek-V4-Pro 80.8% → 90.6%, GPT-OSS-120B 71.5% → 88.2%, Gemma-4 62.3% → 87.8%, Llama-3.3 42.9% → 82.8% (paired, each p ≤ 3e-12). The gap between the best and worst model narrowed from 37.9 to 12.2 points. Includes the 55-calculator library, validated on 10,538 training cases.
 2. **Dose safety depends on a hidden setting** (below). The same model weights approved between 0 and 58 of 60 limit-violating doses depending on whether reasoning was enabled.
 
 ## Dose safety depends on a hidden setting

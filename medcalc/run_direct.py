@@ -6,7 +6,7 @@ Procen's harness (see medcalc/README.md for its protocol); that code is not part
   export CF_ACCOUNT_ID=... CF_API_TOKEN=...
   python medcalc/run_direct.py --test path/to/test_data.csv --model @cf/qwen/qwen3.8-27b --thinking on
 
-Cases: --per-calc 4 picks the same seeded stratified subset used in the results (seed 42).
+Cases: all 1,100 test rows by default (--per-calc 0); --per-calc 4 picks the seeded 220-case subset (seed 42).
 """
 
 from __future__ import annotations
@@ -58,7 +58,7 @@ def main() -> int:
     p.add_argument("--thinking", choices=["on", "off", "default"], default="default")
     p.add_argument("--reasoning-effort", choices=["low", "medium", "high"])
     p.add_argument("--max-tokens", type=int, default=8192)
-    p.add_argument("--per-calc", type=int, default=4)
+    p.add_argument("--per-calc", type=int, default=0, help="cases per calculator; 0 = all 20")
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--out", type=Path, required=True)
     a = p.parse_args()

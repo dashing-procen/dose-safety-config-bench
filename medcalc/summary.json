@@ -2,138 +2,21 @@
  "pairs": [
   {
    "family": "Qwen3.8 27B",
-   "alone": "alone__qwen3.8-27b__thinking-on",
-   "cns": "cns__qwen3.8-27b__thinking-off",
-   "n": 188,
-   "api_errors_excluded": {
-    "alone": 32,
-    "cns": 0
-   },
-   "alone_pct": 85.1,
-   "cns_pct": 95.7,
-   "gained": 23,
-   "lost": 3,
-   "mcnemar_p": 8.797645568847656e-05,
-   "diff_ci95_pp": [
-    5.9,
-    16.0
-   ],
-   "median_output_tokens": {
-    "alone": 1057,
-    "cns": 218
-   }
-  },
-  {
-   "family": "DeepSeek-V4-Pro",
-   "alone": "alone__deepseek-v4-pro__thinking-on",
-   "cns": "cns__deepseek-v4-pro__thinking-off",
-   "n": 218,
-   "api_errors_excluded": {
-    "alone": 1,
-    "cns": 1
-   },
-   "alone_pct": 80.3,
-   "cns_pct": 90.4,
-   "gained": 37,
-   "lost": 15,
-   "mcnemar_p": 0.003185253447776759,
-   "diff_ci95_pp": [
-    3.7,
-    16.5
-   ],
-   "median_output_tokens": {
-    "alone": 1155,
-    "cns": 214
-   }
-  },
-  {
-   "family": "GPT-OSS-120B",
-   "alone": "alone__gpt-oss-120b__effort-high",
-   "cns": "cns__gpt-oss-120b__effort-low",
-   "n": 220,
-   "api_errors_excluded": {
-    "alone": 0,
-    "cns": 0
-   },
-   "alone_pct": 66.4,
-   "cns_pct": 86.4,
-   "gained": 53,
-   "lost": 9,
-   "mcnemar_p": 1.0507232717140574e-08,
-   "diff_ci95_pp": [
-    13.6,
-    26.4
-   ],
-   "median_output_tokens": {
-    "alone": 909,
-    "cns": 668
-   }
-  },
-  {
-   "family": "Gemma-4 26B",
-   "alone": "alone__gemma-4-26b__thinking-off",
-   "cns": "cns__gemma-4-26b__thinking-off",
-   "n": 220,
-   "api_errors_excluded": {
-    "alone": 0,
-    "cns": 0
-   },
-   "alone_pct": 58.2,
-   "cns_pct": 85.9,
-   "gained": 74,
-   "lost": 13,
-   "mcnemar_p": 1.5938987081347696e-11,
-   "diff_ci95_pp": [
-    20.5,
-    35.0
-   ],
-   "median_output_tokens": {
-    "alone": 463,
-    "cns": 223
-   }
-  },
-  {
-   "family": "Llama-3.3 70B",
-   "alone": "alone__llama-3.3-70b__default",
-   "cns": "cns__llama-3.3-70b__default",
-   "n": 220,
-   "api_errors_excluded": {
-    "alone": 0,
-    "cns": 0
-   },
-   "alone_pct": 42.3,
-   "cns_pct": 82.3,
-   "gained": 94,
-   "lost": 6,
-   "mcnemar_p": 2.005959521923613e-21,
-   "diff_ci95_pp": [
-    32.7,
-    47.3
-   ],
-   "median_output_tokens": {
-    "alone": 275,
-    "cns": 311
-   }
-  }
- ],
- "context": [
-  {
-   "family": "Qwen3.8 27B, alone thinking off",
    "alone": "alone__qwen3.8-27b__thinking-off",
    "cns": "cns__qwen3.8-27b__thinking-off",
-   "n": 218,
+   "n": 1100,
    "api_errors_excluded": {
-    "alone": 2,
+    "alone": 0,
     "cns": 0
    },
-   "alone_pct": 80.3,
-   "cns_pct": 94.0,
-   "gained": 32,
-   "lost": 2,
-   "mcnemar_p": 6.938353180885315e-08,
+   "alone_pct": 78.8,
+   "cns_pct": 95.0,
+   "gained": 193,
+   "lost": 15,
+   "mcnemar_p": 1.417295333011195e-40,
    "diff_ci95_pp": [
-    9.2,
-    18.8
+    13.8,
+    18.5
    ],
    "median_output_tokens": {
     "alone": 869,
@@ -141,30 +24,147 @@
    }
   },
   {
-   "family": "Qwen3.8 27B, CNS thinking on",
-   "alone": "alone__qwen3.8-27b__thinking-on",
-   "cns": "cns__qwen3.8-27b__thinking-on",
-   "n": 188,
+   "family": "DeepSeek-V4-Pro",
+   "alone": "alone__deepseek-v4-pro__thinking-on",
+   "cns": "cns__deepseek-v4-pro__thinking-off",
+   "n": 1100,
    "api_errors_excluded": {
-    "alone": 32,
-    "cns": 2
+    "alone": 0,
+    "cns": 0
    },
-   "alone_pct": 85.1,
-   "cns_pct": 95.7,
-   "gained": 23,
-   "lost": 3,
-   "mcnemar_p": 8.797645568847656e-05,
+   "alone_pct": 80.8,
+   "cns_pct": 90.6,
+   "gained": 175,
+   "lost": 67,
+   "mcnemar_p": 2.6240097440053297e-12,
    "diff_ci95_pp": [
-    5.3,
-    16.0
+    7.1,
+    12.5
    ],
    "median_output_tokens": {
-    "alone": 1057,
-    "cns": 538
+    "alone": 1059,
+    "cns": 212
    }
   },
   {
-   "family": "Gemma-4 26B, alone thinking on",
+   "family": "GPT-OSS-120B",
+   "alone": "alone__gpt-oss-120b__effort-high",
+   "cns": "cns__gpt-oss-120b__effort-low",
+   "n": 1100,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 71.5,
+   "cns_pct": 88.2,
+   "gained": 241,
+   "lost": 57,
+   "mcnemar_p": 4.402954055948515e-28,
+   "diff_ci95_pp": [
+    13.9,
+    19.6
+   ],
+   "median_output_tokens": {
+    "alone": 931,
+    "cns": 672
+   }
+  },
+  {
+   "family": "Gemma-4 26B",
+   "alone": "alone__gemma-4-26b__thinking-off",
+   "cns": "cns__gemma-4-26b__thinking-off",
+   "n": 1100,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 62.3,
+   "cns_pct": 87.8,
+   "gained": 342,
+   "lost": 61,
+   "mcnemar_p": 1.620916876420401e-48,
+   "diff_ci95_pp": [
+    22.3,
+    28.8
+   ],
+   "median_output_tokens": {
+    "alone": 433,
+    "cns": 224
+   }
+  },
+  {
+   "family": "Llama-3.3 70B",
+   "alone": "alone__llama-3.3-70b__default",
+   "cns": "cns__llama-3.3-70b__default",
+   "n": 1100,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 42.9,
+   "cns_pct": 82.8,
+   "gained": 487,
+   "lost": 48,
+   "mcnemar_p": 1.651441679028181e-92,
+   "diff_ci95_pp": [
+    36.5,
+    43.3
+   ],
+   "median_output_tokens": {
+    "alone": 265,
+    "cns": 325
+   }
+  }
+ ],
+ "context": [
+  {
+   "family": "Qwen3.8 27B, alone thinking on",
+   "alone": "alone__qwen3.8-27b__thinking-on",
+   "cns": "cns__qwen3.8-27b__thinking-off",
+   "n": 1100,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 75.9,
+   "cns_pct": 95.0,
+   "gained": 228,
+   "lost": 18,
+   "mcnemar_p": 1.7248676975987693e-47,
+   "diff_ci95_pp": [
+    16.6,
+    21.6
+   ],
+   "median_output_tokens": {
+    "alone": 1181,
+    "cns": 226
+   }
+  },
+  {
+   "family": "Qwen3.8 27B, both thinking on",
+   "alone": "alone__qwen3.8-27b__thinking-on",
+   "cns": "cns__qwen3.8-27b__thinking-on",
+   "n": 1100,
+   "api_errors_excluded": {
+    "alone": 0,
+    "cns": 0
+   },
+   "alone_pct": 75.9,
+   "cns_pct": 95.3,
+   "gained": 228,
+   "lost": 15,
+   "mcnemar_p": 4.530039371326432e-50,
+   "diff_ci95_pp": [
+    16.9,
+    21.9
+   ],
+   "median_output_tokens": {
+    "alone": 1181,
+    "cns": 592
+   }
+  },
+  {
+   "family": "Gemma-4 26B, alone thinking on (101 cases)",
    "alone": "alone__gemma-4-26b__thinking-on",
    "cns": "cns__gemma-4-26b__thinking-off",
    "n": 101,

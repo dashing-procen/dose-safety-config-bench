@@ -14,18 +14,19 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 REC = HERE / "records"
 
-# family, alone arm (best reasoning setting), CNS arm (reasoning off or low)
+# family, alone arm, CNS arm. The alone arm is the family's best measured setting on these cases
+# (chosen after the fact, which can only favour the baseline). The CNS arm runs with reasoning off or low.
 PAIRS = [
-    ("Qwen3.8 27B", "alone__qwen3.8-27b__thinking-on", "cns__qwen3.8-27b__thinking-off"),
+    ("Qwen3.8 27B", "alone__qwen3.8-27b__thinking-off", "cns__qwen3.8-27b__thinking-off"),
     ("DeepSeek-V4-Pro", "alone__deepseek-v4-pro__thinking-on", "cns__deepseek-v4-pro__thinking-off"),
     ("GPT-OSS-120B", "alone__gpt-oss-120b__effort-high", "cns__gpt-oss-120b__effort-low"),
     ("Gemma-4 26B", "alone__gemma-4-26b__thinking-off", "cns__gemma-4-26b__thinking-off"),
     ("Llama-3.3 70B", "alone__llama-3.3-70b__default", "cns__llama-3.3-70b__default"),
 ]
 EXTRA = [  # other configurations reported for context
-    ("Qwen3.8 27B, alone thinking off", "alone__qwen3.8-27b__thinking-off", "cns__qwen3.8-27b__thinking-off"),
-    ("Qwen3.8 27B, CNS thinking on", "alone__qwen3.8-27b__thinking-on", "cns__qwen3.8-27b__thinking-on"),
-    ("Gemma-4 26B, alone thinking on", "alone__gemma-4-26b__thinking-on", "cns__gemma-4-26b__thinking-off"),
+    ("Qwen3.8 27B, alone thinking on", "alone__qwen3.8-27b__thinking-on", "cns__qwen3.8-27b__thinking-off"),
+    ("Qwen3.8 27B, both thinking on", "alone__qwen3.8-27b__thinking-on", "cns__qwen3.8-27b__thinking-on"),
+    ("Gemma-4 26B, alone thinking on (101 cases)", "alone__gemma-4-26b__thinking-on", "cns__gemma-4-26b__thinking-off"),
 ]
 
 
